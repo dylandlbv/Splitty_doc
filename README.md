@@ -5,7 +5,7 @@ Documentation officielle de [Splitty](https://github.com/dylandlbv/Splitty) — 
 ## Stack de la doc
 
 - **[Astro Starlight](https://starlight.astro.build/)** — générateur de site de documentation (Astro 7).
-- **i18n** — français (langue par défaut, à la racine) et anglais (`/en/`), avec sélecteur de langue.
+- **i18n** — français (`/fr/`, langue par défaut) et anglais (`/en/`), avec sélecteur de langue.
 - **Déploiement** — GitHub Pages, automatique à chaque push sur `main` via GitHub Actions (`.github/workflows/deploy.yml`).
 
 ## Développement local
@@ -20,17 +20,18 @@ npm run build     # build de production dans dist/
 
 ```
 src/content/docs/
-├── index.mdx                  # accueil (FR)
+├── fr/
+│   ├── index.mdx              # accueil (FR)
 ├── getting-started/           # présentation + démarrage rapide
 ├── user-guide/                # comptes, foyers, revenus, dépenses, soldes
 ├── deployment/                # Docker, PostgreSQL, variables d'environnement
 ├── architecture/              # vue d'ensemble, moteur de calcul, base de données
 ├── api/                       # vue d'ensemble + référence des routes
 ├── contributing/              # tests, CI/CD, comment contribuer
-└── en/                        # traduction anglaise (miroir de la racine)
+└── en/                        # traduction anglaise (miroir de `fr/`)
 ```
 
-Pour modifier la doc : éditez les fichiers Markdown/MDX concernés (la racine = français, `en/` = anglais), puis poussez sur `main` — le site est redéployé automatiquement.
+Pour modifier la doc : éditez les fichiers Markdown/MDX concernés (`fr/` = français, `en/` = anglais), puis poussez sur `main` — le site est redéployé automatiquement.
 
 ## Liens
 

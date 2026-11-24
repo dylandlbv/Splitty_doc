@@ -32,4 +32,4 @@ Authorization: Bearer <token>
 - IDs (`id`, `user_id`, `household_id`, `expenseID`) are strings.
 - Errors: HTTP 4xx/5xx status with a JSON error body; 401 when the token is missing or invalid.
 
-See the [route reference](/en/api/reference/).
+See the [route reference](/api/reference/).

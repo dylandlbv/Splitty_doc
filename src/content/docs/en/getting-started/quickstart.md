@@ -46,5 +46,5 @@ SQL migrations are applied automatically when the backend starts.
 ## Next steps
 
 - Create an account, then a household, from the UI.
-- See the [user guide](/en/user-guide/households/) to invite members and enter incomes and expenses.
-- Deployment details: [Docker](/en/deployment/docker/), [PostgreSQL](/en/deployment/postgres/), [environment variables](/en/deployment/environment/).
+- See the [user guide](/user-guide/households/) to invite members and enter incomes and expenses.
+- Deployment details: [Docker](/deployment/docker/), [PostgreSQL](/deployment/postgres/), [environment variables](/deployment/environment/).

@@ -1,19 +1,20 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { fixBaseLinks } from './astro-fix-base-links.mjs';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://dylandlbv.github.io',
-	base: '/Splitty_doc/',
+	base: '/Splitty_doc',
 	integrations: [
 		starlight({
 			title: 'Splitty',
 			description:
 				'Documentation de Splitty : application de gestion du budget familial et de calcul des remboursements entre membres d’un foyer.',
-			defaultLocale: 'root',
+			defaultLocale: 'fr',
 			locales: {
-				root: { label: 'Français', lang: 'fr-FR' },
+				fr: { label: 'Français', lang: 'fr-FR' },
 				en: { label: 'English', lang: 'en-US' },
 			},
 			logo: { src: './src/assets/logo.svg' },
@@ -58,5 +59,6 @@ export default defineConfig({
 				},
 			],
 		}),
+		fixBaseLinks(),
 	],
 });

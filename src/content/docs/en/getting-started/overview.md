@@ -27,4 +27,4 @@ Splitty manages the family budget: everyone declares their monthly income, every
 
 Only **common** expenses count towards balances; personal expenses are tracked but excluded from repayments. All amounts are stored in **cents** (bigint) to avoid floating-point errors.
 
-See the [calculation engine](/en/architecture/calculation-engine/) for the rounding and repayment rules in detail.
+See the [calculation engine](/architecture/calculation-engine/) for the rounding and repayment rules in detail.
