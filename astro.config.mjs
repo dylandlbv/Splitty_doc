@@ -15,7 +15,7 @@ export default defineConfig({
 			defaultLocale: 'fr',
 			locales: {
 				fr: { label: 'Français', lang: 'fr-FR' },
-				en: { label: 'English', lang: 'en-US' },
+				en: { label: 'English', lang: 'en' },
 			},
 			logo: { src: './src/assets/logo.svg' },
 			social: [
