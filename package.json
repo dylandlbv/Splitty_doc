@@ -1,0 +1,18 @@
+{
+  "name": "splitty-doc",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.43.1",
+    "astro": "^7.3.6",
+    "sharp": "^0.35.3"
+  },
+  "description": "Documentation de Splitty (Astro Starlight, FR + EN, déployée sur GitHub Pages)"
+}

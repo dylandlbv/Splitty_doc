@@ -1,0 +1,42 @@
+---
+title: Splitty
+description: Gérez le budget de votre foyer et sachez qui doit rembourser qui.
+template: splash
+hero:
+  tagline: Le budget familial, partagé et réglé — chacun déclare ses revenus, enregistre ses dépenses, et Splitty calcule qui doit rembourser qui, au prorata des revenus.
+  actions:
+    - text: Démarrage rapide
+      link: /getting-started/quickstart/
+      icon: right-arrow
+      variant: primary
+    - text: Guide utilisateur
+      link: /user-guide/accounts/
+      icon: open-book
+    - text: Référence API
+      link: /api/reference/
+      icon: document
+      variant: minimal
+    - text: Voir le code sur GitHub
+      link: https://github.com/dylandlbv/Splitty
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Pourquoi Splitty ?
+
+<CardGrid stagger>
+	<Card title="Multi-foyers" icon="seti:folder">
+		Chaque foyer a ses membres, ses revenus et ses dépenses. Le créateur du foyer est administrateur et invite les autres membres par email.
+	</Card>
+	<Card title="Répartition au choix" icon="random">
+		Dépense commune répartie de façon égalitaire, ou proportionnelle aux revenus déclarés du mois.
+	</Card>
+	<Card title="Remboursements optimisés" icon="approve-check">
+		Pour chaque mois, Splitty calcule les soldes de chacun et suggère les virements (méthode gloutonne) qui minimisent le nombre de transferts.
+	</Card>
+	<Card title="Zéro erreur d'arrondi" icon="seti:db">
+		Tous les montants sont stockés en centimes (bigint) : aucun calcul en virgule flottante.
+	</Card>
+</CardGrid>
